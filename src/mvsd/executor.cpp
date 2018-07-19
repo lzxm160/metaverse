@@ -258,7 +258,7 @@ void executor::handle_started(const code& ec)
     {
         log::error(LOG_SERVER) << format(BS_NODE_START_FAIL) % ec.message();
         // stop(ec);
-        return;
+        // return;
     }
 
     log::info(LOG_SERVER) << BS_NODE_SEEDED;
