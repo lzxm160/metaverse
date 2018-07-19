@@ -84,12 +84,12 @@ settings::settings(bc::settings context)
             inbound_port = 15251;
 
             seeds.reserve(6);
-            seeds.push_back({ "test-asia.metaverse.live", 15251 });
-            seeds.push_back({ "test-americas.metaverse.live", 15251 });
-            seeds.push_back({ "test-europe.metaverse.live", 15251 });
-            seeds.push_back({ "test-asia.mvs.live", 15251 });
-            seeds.push_back({ "test-americas.mvs.live", 15251 });
-            seeds.push_back({ "test-europe.mvs.live", 15251 });
+            seeds.push_back({ "testxx-asia.metaverse.live", 15251 });
+            seeds.push_back({ "testxx-americas.metaverse.live", 15251 });
+            seeds.push_back({ "testxx-europe.metaverse.live", 15251 });
+            seeds.push_back({ "testxx-asia.mvs.live", 15251 });
+            seeds.push_back({ "testxx-americas.mvs.live", 15251 });
+            seeds.push_back({ "testxx-europe.mvs.live", 15251 });
             break;
         }
 
