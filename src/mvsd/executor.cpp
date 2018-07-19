@@ -257,7 +257,7 @@ void executor::handle_started(const code& ec)
     if (ec)
     {
         log::error(LOG_SERVER) << format(BS_NODE_START_FAIL) % ec.message();
-        stop(ec);
+        // stop(ec);
         return;
     }
 
@@ -280,7 +280,7 @@ void executor::handle_running(const code& ec)
     if (ec)
     {
         log::info(LOG_SERVER) << format(BS_NODE_START_FAIL) % ec.message();
-        stop(ec);
+        // stop(ec);
         return;
     }
 
