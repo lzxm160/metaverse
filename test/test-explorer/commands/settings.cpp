@@ -37,7 +37,7 @@ BOOST_AUTO_TEST_SUITE(settings__invoke)
 "        error_file \"\"\n" \
 "        hosts_file \"\"\n" \
 "        identifier 0\n" \
-"        seeds seed.bitchannels.io:8333,seed.bitcoinstats.com:8333,seed.bitcoin.sipa.be:8333,dnsseed.bluematt.me:8333,seed.bitcoin.jonasschnelli.ch:8333,dnsseed.bitcoin.dashjr.org:8333\n" \
+"        seeds seedxx.bitchannels.io:8333,seedxx.bitcoinstats.com:8333,seedxx.bitcoin.sipa.be:8333,dnsseedxx.bluematt.me:8333,seedxx.bitcoin.jonasschnelli.ch:8333,dnsseedxx.bitcoin.dashjr.org:8333\n" \
 "    }\n" \
 "    server\n" \
 "    {\n" \
@@ -70,7 +70,7 @@ BOOST_AUTO_TEST_SUITE(settings__invoke)
 "        error_file error.log\n" \
 "        hosts_file my.hosts\n" \
 "        identifier 10\n" \
-"        seeds seed1.libbitcoin.org:8333,seed2.libbitcoin.org:8333\n" \
+"        seeds seed1xx.libbitcoin.org:8333,seed2xx.libbitcoin.org:8333\n" \
 "    }\n" \
 "    server\n" \
 "    {\n" \
@@ -78,7 +78,7 @@ BOOST_AUTO_TEST_SUITE(settings__invoke)
 "        connect_retries 21\n" \
 "        connect_timeout_seconds 22\n" \
 "        server_public_key \"CrWu}il)+MbqD60BV)v/xt&Xtwj*$[Q}Q{$9}hom\"\n" \
-"        url https://mainnet.obelisk.net:42\n" \
+"        url https://mainnetxx.obelisk.net:42\n" \
 "    }\n" \
 "    wallet\n" \
 "    {\n" \
@@ -114,8 +114,8 @@ BOOST_AUTO_TEST_CASE(settings__invoke__test_values__okay_output)
     command.set_network_hosts_file_setting("my.hosts");
     command.set_network_debug_file_setting("debug.log");
     command.set_network_error_file_setting("error.log");
-    command.set_network_seeds_setting({ { "seed1.libbitcoin.org:8333" }, { "seed2.libbitcoin.org:8333" } });
-    command.set_server_url_setting({ "https://mainnet.obelisk.net:42" });
+    command.set_network_seeds_setting({ { "seed1xx.libbitcoin.org:8333" }, { "seed2xx.libbitcoin.org:8333" } });
+    command.set_server_url_setting({ "https://mainnetxx.obelisk.net:42" });
     command.set_server_connect_retries_setting(21);
     command.set_server_connect_timeout_seconds_setting(22);
     command.set_server_server_public_key_setting({ "CrWu}il)+MbqD60BV)v/xt&Xtwj*$[Q}Q{$9}hom" });

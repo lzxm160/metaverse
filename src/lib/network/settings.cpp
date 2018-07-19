@@ -68,13 +68,13 @@ settings::settings(bc::settings context)
 
             // Seeds based on mvs.live/network/dns-servers
             seeds.reserve(6);
-            seeds.push_back({ "main-asia.metaverse.live", 5251 });
-            seeds.push_back({ "main-americas.metaverse.live", 5251 });
-            seeds.push_back({ "main-europe.metaverse.live", 5251 });
-            seeds.push_back({ "main-asia.mvs.live", 5251 });
-            seeds.push_back({ "main-americas.mvs.live", 5251 });
-            seeds.push_back({ "main-europe.mvs.live", 5251 });
-            seeds.push_back({ "seed.getmvs.org", 5251 });
+            seeds.push_back({ "mainxx-asia.metaverse.live", 5251 });
+            seeds.push_back({ "mainxx-americas.metaverse.live", 5251 });
+            seeds.push_back({ "mainxx-europe.metaverse.live", 5251 });
+            seeds.push_back({ "mainxx-asia.mvs.live", 5251 });
+            seeds.push_back({ "mainxxx-americas.mvs.live", 5251 });
+            seeds.push_back({ "mainxx-europe.mvs.live", 5251 });
+            seeds.push_back({ "seedxx.getmvs.org", 5251 });
             break;
         }
 
